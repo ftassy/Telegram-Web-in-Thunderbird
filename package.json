@@ -10,6 +10,10 @@
         "build": "npx web-ext build --ignore-files=tsconfig.json package.json package-lock.json images README.md */*.ts ignored --overwrite-dest",
         "prestart": "npx tsc",
         "start": "npx web-ext run --browser-console -f /usr/bin/thunderbird",
+        "prestartBeta": "npx tsc",
+        "startBeta": "npx web-ext run --browser-console -f $HOME/bin/thunderbird_beta/thunderbird",
+        "prestart60": "npx tsc",
+        "start60": "npx web-ext run --browser-console -f $HOME/bin/thunderbird_60/thunderbird",
         "check-lib": "npm outdated"
     },
     "author": "Florent Tassy",
