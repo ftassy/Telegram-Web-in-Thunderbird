@@ -6,7 +6,7 @@ Telegram Web in Thunderbird is a Thunderbird add-on that opens Telegram Web in a
 ******************
 <p align="center">
     <strong>Get it from<br>
-    <a href="https://addons.thunderbird.net/fr/thunderbird/addon">addons.thunderbird.net</a>
+    <a href="https://addons.thunderbird.net/fr/thunderbird/addon/telegram-web-in-thunderbird/">addons.thunderbird.net</a>
     </strong>
 </p>
 
