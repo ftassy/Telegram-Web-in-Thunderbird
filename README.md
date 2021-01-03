@@ -33,7 +33,7 @@ Never.
 <h3>How do I stay connected when I re-open Thunderbird ?</h3>
 If you wish to stay connected to Telegram Web, you will have to allow cookies.  
 
-The cookies menu can be access as follow in Thunderbird:    
+The cookies menu can be access as follows in Thunderbird:    
 _GNU/Linux_ : "Edit" > "Preferences" > "Privacy" or "Privacy and Security" > "Web Content" section.  
 _macOS_ : "Thunderbird" > "Preferences" > "Privacy" or "Privacy and Security" > "Web Content" section.  
 _Windows_ : "Tools" > "Options" > "Privacy" or "Privacy and Security" > "Web Content" section.  
