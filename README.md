@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/ftassy/Telegram-Web-in-Thunderbird/blob/master/icons/icon.svg" alt="Telegram Web in Thunderbird icon"></p>
+<p align="center"><img src="icons/icon.svg" alt="Telegram Web in Thunderbird icon"></p>
 
 <h1>Telegram Web in Thunderbird</h1>
 Telegram Web in Thunderbird is a Thunderbird add-on that opens Telegram Web in a Thunderbird tab.  
@@ -14,7 +14,7 @@ Telegram Web in Thunderbird is a Thunderbird add-on that opens Telegram Web in a
 
 <h2>How does it work ?</h2>
 Once the add-on is installed, a new icon appears in Thunderbird Mail toolbar:
-![Thunderbird Mail toolbar](images/browser_action.png)
+<img src="images/browser_action.png" alt="Thunderbird Mail toolbar">
 
 Click on it to open the Telegram Web tab.  
 
@@ -28,20 +28,22 @@ It does not collect any data.
 Of course, Telegram Web works as it would do in your web browser, including regarding their own data collection.  
 
 <h3>So Telegram Web in Thunderbird will never collect my data ?</h3>
-Never.
+Never.  
 
 <h3>How do I stay connected when I re-open Thunderbird ?</h3>
 If you wish to stay connected to Telegram Web, you will have to allow cookies.  
+
 The cookies menu can be access as follow in Thunderbird:    
 _GNU/Linux_ : "Edit" > "Preferences" > "Privacy" or "Privacy and Security" > "Web Content" section.  
 _macOS_ : "Thunderbird" > "Preferences" > "Privacy" or "Privacy and Security" > "Web Content" section.  
 _Windows_ : "Tools" > "Options" > "Privacy" or "Privacy and Security" > "Web Content" section.  
+
 You will have to allow and keep cookies for this domain:  
 * https://web.telegram.org
 
 <h2>Build from source</h2>
 Prerequisite:  
-Install [Node.js](https://nodejs.org).  
+Install <a href="(https://nodejs.org">Node.js</a>.  
 
 The add-on can be built by running the following command from its root directory:  
 ```
