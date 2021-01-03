@@ -53,7 +53,7 @@ npm run build
 
 <h2>Legal notice</h2>
 
-Thunderbird is a registered trademark of the Mozilla Foundation.
+Thunderbird is a registered trademark of the Mozilla Foundation.  
 Telegram is a registered trademark of TELEGRAM FZ-LLC.  
 GNU is a registered trademark of the Free Software Foundation.  
 Linux is a registered trademark of Linus Torvalds.  
