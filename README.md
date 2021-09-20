@@ -1,4 +1,4 @@
-<p align="center"><img src="icons/icon.svg" alt="Telegram Web in Thunderbird icon"></p>
+<p align="center"><img src="icons/icon.png" alt="Telegram Web in Thunderbird icon"></p>
 
 <h1>Telegram Web in Thunderbird</h1>
 Telegram Web in Thunderbird is a Thunderbird add-on that opens Telegram Web in a Thunderbird tab.  
@@ -64,4 +64,6 @@ The above-mentioned trademarks are only used to refer to products.
 Telegram Web in Thunderbird and its developer are not affiliated, sponsored nor endorsed by any of the above-mentioned organizations.  
 
 <h2>Changelog</h2>
+1.1.0 -> updated web-ext and typescript versions, icons from SVG to PNG   
+
 1.0.0 -> first release  
