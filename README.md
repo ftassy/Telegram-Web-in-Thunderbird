@@ -64,6 +64,8 @@ The above-mentioned trademarks are only used to refer to products.
 Telegram Web in Thunderbird and its developer are not affiliated, sponsored nor endorsed by any of the above-mentioned organizations.  
 
 <h2>Changelog</h2>
+1.2.0 -> updated web-ext and typescript versions, workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=1728631, npm script refreshed
+
 1.1.0 -> updated web-ext and typescript versions, icons from SVG to PNG   
 
 1.0.0 -> first release  
