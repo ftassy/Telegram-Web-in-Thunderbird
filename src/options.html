@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Telegram Web in Thunderbird</title>
+</head>
+
+<body>
+
+    <div class="panel-section panel-section-formElements">
+        <div class="addon-option-row">
+            <label id="display">Display</label>
+            <span>
+                <input class="browser-style" type="radio" id="mode-switcher-tab" name="mode-switcher" value="tab">
+                <label id="tab" for="mode-switcher1">Tab</label>
+                <span>&nbsp;</span>
+                <input class="browser-style" type="radio" id="mode-switcher-popup" name="mode-switcher" value="popup">
+                <label id="popup" for="mode-switcher2">Popup</label>
+            </span>
+        </div>
+    </div>
+
+</body>
+<style>
+    html,
+    body {
+        height: 100%;
+        background-color: var(--in-content-box-background);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background: #23222B;
+            color: #FBFBFE;
+        }
+    }
+
+    .addon-option-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+<script src="options.js"></script>
+
+</html>

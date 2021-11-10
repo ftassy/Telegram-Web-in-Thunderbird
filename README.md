@@ -1,4 +1,4 @@
-<p align="center"><img src="icons/icon.png" alt="Telegram Web in Thunderbird icon"></p>
+<p align="center"><img src="src/icons/icon.png" alt="Telegram Web in Thunderbird icon"></p>
 
 <h1>Telegram Web in Thunderbird</h1>
 Telegram Web in Thunderbird is a Thunderbird add-on that opens Telegram Web in a Thunderbird tab.  
@@ -47,7 +47,7 @@ Install <a href="(https://nodejs.org">Node.js</a>.
 
 The add-on can be built by running the following command from its root directory:  
 ```
-npm install
+npm ci
 npm run build
 ```
 
@@ -64,7 +64,7 @@ The above-mentioned trademarks are only used to refer to products.
 Telegram Web in Thunderbird and its developer are not affiliated, sponsored nor endorsed by any of the above-mentioned organizations.  
 
 <h2>Changelog</h2>
-1.2.0 -> updated web-ext and typescript versions, workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=1728631, npm script refreshed
+1.2.0 -> updated web-ext and typescript versions, workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=1728631, npm script refreshed  
 
 1.1.0 -> updated web-ext and typescript versions, icons from SVG to PNG   
 

@@ -2,9 +2,10 @@
     "manifest_version": 2,
     "name": "Telegram Web in Thunderbird",
     "description": "Open Telegram Web in a Thunderbird Tab",
-    "version": "1.2.0",
+    "version": "2.0.0",
     "author": "Florent Tassy",
     "homepage_url": "https://github.com/ftassy/Telegram-Web-in-Thunderbird",
+    "default_locale": "en",
     "applications": {
         "gecko": {
             "id": "te-in-th@ftassy.github.io",
@@ -12,19 +13,29 @@
         }
     },
     "permissions": [
-        "tabs"
+        "tabs",
+        "storage"
     ],
     "browser_action": {
         "default_title": "Telegram",
         "default_icon": "icons/icon.png"
     },
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+      },
     "icons": {
         "48": "icons/icon48.png",
         "96": "icons/icon96.png"
     },
     "background": {
         "scripts": [
-            "index.js"
+            "background.js"
         ]
-    }
+    },
+    "content_scripts": [{
+        "matches": ["https://*.telegram.org/*"],
+        "css": ["min-size.css"],
+        "all_frames": true
+    }]
 }

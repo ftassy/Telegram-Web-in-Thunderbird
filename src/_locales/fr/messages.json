@@ -1,0 +1,16 @@
+{
+    "display": {
+        "message": "Affichage de Telegram Web",
+        "description": "Display Telegram Web in"
+    },
+
+    "tab": {
+        "message": "Onglet",
+        "description": "Tab"
+    },
+
+    "popup": {
+        "message": "Pop-up",
+        "description": "Pop-up"
+    }
+} 

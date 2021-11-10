@@ -1,0 +1,16 @@
+{
+    "display": {
+        "message": "Telegram Web Display",
+        "description": "Telegram Web Display"
+    },
+
+    "tab": {
+        "message": "Tab",
+        "description": "Tab"
+    },
+
+    "popup": {
+        "message": "Pop-up",
+        "description": "Pop-up"
+    }
+} 
