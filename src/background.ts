@@ -1,16 +1,14 @@
 const urlTelegramWeb = "https://web.telegram.org";
+//@ts-ignore
+let browser = browser;
 
 function initialize(): void {
-    //@ts-ignore
     let getTeInThMode = browser.storage.local.get("te-in-th-mode");
     getTeInThMode.then((storedValue: any) => {
         if (storedValue["te-in-th-mode"] === "popup") {
-            //@ts-ignore
             browser.browserAction.setPopup({ popup: urlTelegramWeb });
         } else {
-            //@ts-ignore
             browser.browserAction.setPopup({ popup: "" });
-            //@ts-ignore
             browser.storage.local.set({ "te-in-th-mode": "tab" });
         }
     });
@@ -42,23 +40,18 @@ async function createOrActivateTab() {
     }
 
     if (isNaN(tabId)) {
-        //@ts-ignore
         browser.tabs.create(tabProperties);
     } else {
-        //@ts-ignore
         browser.tabs.update(tabId, tabProperties);
     }
 }
 
 function popupSwitch(item: any) {
     if (item.hasOwnProperty("te-in-th-mode")) {
-        //@ts-ignore
         item["te-in-th-mode"].newValue === "popup" ? browser.browserAction.setPopup({ popup: urlTelegramWeb }) : browser.browserAction.setPopup({ popup: "" });
     }
 }
 
 initialize();
-//@ts-ignore
 browser.storage.onChanged.addListener(popupSwitch);
-//@ts-ignore
 browser.browserAction.onClicked.addListener(createOrActivateTab);
