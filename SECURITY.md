@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The latest version of the addon is supported.
+The latest version of the add-on is supported.
 
 ## Reporting a Vulnerability
 
