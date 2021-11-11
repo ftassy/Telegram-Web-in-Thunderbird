@@ -1,19 +1,19 @@
 {
     "name": "te-in-th",
-    "version": "1.2.0",
+    "version": "2.0.0",
     "description": "Telegram Web in Thunderbird",
     "author": "Florent Tassy",
     "license": "GPL-3.0-or-later",
-    "main": "index.js",
+    "main": "background.js",
     "scripts": {
-        "tsjs": "npx tsc",
-        "test": "npm run tsjs && npx web-ext lint --ignore-files=tsconfig.json package.json package-lock.json images README.md */*.ts ignored",
-        "build": "npm run tsjs && npx web-ext build --ignore-files=tsconfig.json package.json package-lock.json images README.md */*.ts ignored --overwrite-dest",
-        "startGnuLinux": "npm run tsjs && npx web-ext run --browser-console -f thunderbird",
-        "startMacOS": "npm run tsjs && npx web-ext run --browser-console -f /Applications/Thunderbird.app/Contents/MacOS/thunderbird",
-        "startUnixBeta": "npm run tsjs && npx web-ext run --browser-console -f $THUNDERBIRD_BETA/thunderbird",
-        "startUnix68": "npm run tsjs && npx web-ext run --browser-console -f $THUNDERBIRD_68/thunderbird",
-        "check-lib": "npm outdated"
+        "lint": "npx tsc && npx web-ext lint --source-dir=src --ignore-files=*.ts ignored",
+        "build": "npx tsc && npx web-ext build --source-dir=src --ignore-files=*.ts ignored --overwrite-dest",
+        "startGnuLinux": "npx tsc && npx web-ext run --source-dir=src --browser-console -f thunderbird",
+        "startMacOS": "npx tsc && npx web-ext run --source-dir=src --browser-console -f /Applications/Thunderbird.app/Contents/MacOS/thunderbird",
+        "startUnixBeta": "npx tsc && npx web-ext run --source-dir=src --browser-console -f $THUNDERBIRD_BETA/thunderbird",
+        "startUnix78": "npx tsc && npx web-ext run --source-dir=src --browser-console -f $THUNDERBIRD_78/thunderbird",
+        "startUnix68": "npx tsc && npx web-ext run --source-dir=src --browser-console -f $THUNDERBIRD_68/thunderbird",
+        "check-dep": "npm outdated && npm audit"
     },
     "devDependencies": {
         "typescript": "^4.4.4",
