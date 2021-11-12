@@ -18,6 +18,12 @@ Once the add-on is installed, a new icon appears in Thunderbird Mail toolbar:
 
 Click on it to open the Telegram Web tab.  
 
+You can change add-on preferences to open Telegram Web in a pop-up rather than in a tab:  
+<img src="images/preferences.png" alt="Preferences menu">
+
+In that case, the pop-up would look like this:  
+<img src="images/pop-up_mode.png" alt="Pop-up mode preview">
+
 <h3>What permissions are needed ?</h3>
 Telegram Web in Thunderbird will need to access Thunderbird tabs to maintain a unique tab.
 
