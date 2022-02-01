@@ -70,6 +70,8 @@ The above-mentioned trademarks are only used to refer to products.
 Telegram Web in Thunderbird and its developer are not affiliated, sponsored nor endorsed by any of the above-mentioned organizations.  
 
 <h2>Changelog</h2>
+2.0.1 -> update to web-ext 6.6.0 and typescript 4.5.5  
+
 2.0.0 -> re-structured code, add possibility to open Telegram web in browser action popup  
 
 1.2.0 -> updated web-ext and typescript versions, workaround for https://bugzilla.mozilla.org/show_bug.cgi?id=1728631, npm script refreshed  
