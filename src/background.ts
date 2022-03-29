@@ -3,6 +3,11 @@ const urlTelegramWeb = "https://web.telegram.org";
 let browser = browser;
 
 function initialize(): void {
+    setTeInThMode();
+    createContextMenu();
+}
+
+function setTeInThMode(): void {
     let getTeInThMode = browser.storage.local.get("te-in-th-mode");
     getTeInThMode.then((storedValue: any) => {
         if (storedValue["te-in-th-mode"] === "popup") {
@@ -11,7 +16,17 @@ function initialize(): void {
             browser.browserAction.setPopup({ popup: "" });
             browser.storage.local.set({ "te-in-th-mode": "tab" });
         }
-    });
+    }); 
+}
+
+function createContextMenu(): void {
+    browser.menus.create({
+        id: "contextMenuEntry",
+        title: browser.i18n.getMessage("context"),
+        type: "normal",
+        contexts: ["browser_action"],
+        onclick: createOrActivateTab
+    }, console.log("Telegram Web context menu created"));
 }
 
 async function createOrActivateTab() {
@@ -48,7 +63,9 @@ async function createOrActivateTab() {
 
 function popupSwitch(item: any) {
     if (item.hasOwnProperty("te-in-th-mode")) {
-        item["te-in-th-mode"].newValue === "popup" ? browser.browserAction.setPopup({ popup: urlTelegramWeb }) : browser.browserAction.setPopup({ popup: "" });
+        item["te-in-th-mode"].newValue === "popup" ? 
+            browser.browserAction.setPopup({ popup: urlTelegramWeb }) : 
+            browser.browserAction.setPopup({ popup: "" });
     }
 }
 
