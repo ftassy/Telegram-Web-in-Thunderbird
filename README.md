@@ -70,6 +70,8 @@ The above-mentioned trademarks are only used to refer to products.
 Telegram Web in Thunderbird and its developer are not affiliated, sponsored nor endorsed by any of the above-mentioned organizations.  
 
 <h2>Changelog</h2>
+3.0.0 -> update to web-ext 6.8.0 and typescript 4.6.3, add context menu on browser action icon on Thunderbird 91+    
+
 2.0.1 -> update to web-ext 6.6.0 and typescript 4.5.5  
 
 2.0.0 -> re-structured code, add possibility to open Telegram web in browser action popup  

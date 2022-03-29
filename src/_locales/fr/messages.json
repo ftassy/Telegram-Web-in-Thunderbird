@@ -12,5 +12,10 @@
     "popup": {
         "message": "Pop-up",
         "description": "Pop-up"
+    },
+
+    "context": {
+        "message": "Ouvrir un onglet Telegram Web",
+        "description": "Open a Telegram Web tab"
     }
 } 

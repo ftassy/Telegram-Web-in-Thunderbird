@@ -1,6 +1,6 @@
 {
     "name": "te-in-th",
-    "version": "2.0.1",
+    "version": "3.0.0",
     "description": "Telegram Web in Thunderbird",
     "author": "Florent Tassy",
     "license": "GPL-3.0-or-later",
@@ -8,6 +8,7 @@
     "scripts": {
         "lint": "npx tsc && npx web-ext lint --source-dir=src --ignore-files=*.ts ignored",
         "build": "npx tsc && npx web-ext build --source-dir=src --ignore-files=*.ts ignored --overwrite-dest",
+        "startFirefox": "npx tsc && npx web-ext run --source-dir=src --browser-console -f firefox",
         "startGnuLinux": "npx tsc && npx web-ext run --source-dir=src --browser-console -f thunderbird",
         "startMacOS": "npx tsc && npx web-ext run --source-dir=src --browser-console -f /Applications/Thunderbird.app/Contents/MacOS/thunderbird",
         "startUnixBeta": "npx tsc && npx web-ext run --source-dir=src --browser-console -f $THUNDERBIRD_BETA/thunderbird",
@@ -16,7 +17,7 @@
         "check-dep": "npm outdated && npm audit"
     },
     "devDependencies": {
-        "typescript": "^4.4.4",
-        "web-ext": "^6.5.0"
+        "typescript": "^4.6.3",
+        "web-ext": "^6.8.0"
     }
 }
