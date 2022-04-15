@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Telegram Web in Thunderbird",
     "description": "Open Telegram Web in a Thunderbird Tab",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "author": "Florent Tassy",
     "homepage_url": "https://github.com/ftassy/Telegram-Web-in-Thunderbird",
     "default_locale": "en",
