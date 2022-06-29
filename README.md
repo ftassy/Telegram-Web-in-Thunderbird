@@ -70,6 +70,8 @@ The above-mentioned trademarks are only used to refer to products.
 Telegram Web in Thunderbird and its developer are not affiliated, sponsored nor endorsed by any of the above-mentioned organizations.  
 
 <h2>Changelog</h2>
+3.0.2 -> update to web-ext 7.1.0 and typescript 4.7.4, override indirect dev dependency to fix security issue  
+
 3.0.1 -> override indirect dev dependency to fix security issue
 
 3.0.0 -> update to web-ext 6.8.0 and typescript 4.6.3, add context menu on browser action icon on Thunderbird 91+    

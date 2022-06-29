@@ -1,6 +1,6 @@
 {
     "name": "te-in-th",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "description": "Telegram Web in Thunderbird",
     "author": "Florent Tassy",
     "license": "GPL-3.0-or-later",
@@ -17,13 +17,15 @@
         "check-dep": "npm outdated && npm audit"
     },
     "devDependencies": {
-        "typescript": "^4.6.3",
-        "web-ext": "^6.8.0"
+        "typescript": "^4.7.4",
+        "web-ext": "^7.1.0"
     },
     "overrides": {
-        "@devicefarmer/adbkit@2.11.3": {
-            "node-forge": "1.3.1",
-            "async": "3.2.2"
+        "download@8.0.0": {
+            "got": "11.8.5"
+        },
+        "package-json@6.5.0": {
+            "got": "11.8.5"
         }
     }
 }
