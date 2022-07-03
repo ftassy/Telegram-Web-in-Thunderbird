@@ -17,5 +17,20 @@
     "context": {
         "message": "Open a Telegram Web tab",
         "description": "Open a Telegram Web tab"
+    },
+
+    "no": {
+        "message": "No",
+        "description": "No"
+    },
+
+    "yes": {
+        "message": "Yes",
+        "description": "Yes"
+    },
+
+    "show-space-toolbar": {
+        "message": "Show icon in spaces vertical toolbar",
+        "description": "Show icon in spaces vertical toolbar"
     }
 } 

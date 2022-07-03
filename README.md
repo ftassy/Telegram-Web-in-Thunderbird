@@ -51,7 +51,7 @@ You will have to allow and keep cookies for this domain:
 Prerequisite:  
 Install <a href="(https://nodejs.org">Node.js</a>.  
 
-The add-on can be built by running the following command from its root directory:  
+Building the add-on from source requires to have a working [Node.js](https://nodejs.org). In addition, some package.json scripts would work only in a "*nix" environment. The add-on can be built by running the following command from its root directory:  
 ```
 npm ci
 npm run build
@@ -70,6 +70,8 @@ The above-mentioned trademarks are only used to refer to products.
 Telegram Web in Thunderbird and its developer are not affiliated, sponsored nor endorsed by any of the above-mentioned organizations.  
 
 <h2>Changelog</h2>
+3.1.0 -> add spaces toolbar icon for Thunderbird >= 100  
+
 3.0.2 -> update to web-ext 7.1.0 and typescript 4.7.4, override indirect dev dependency to fix security issue  
 
 3.0.1 -> override indirect dev dependency to fix security issue
